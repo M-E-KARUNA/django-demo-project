@@ -1,0 +1,12 @@
+{% extends 'App/useparent.html' %}
+{% block title %} 
+DETAILS FROM DB
+{% endblock %} 
+  
+
+{% block content %}
+<div>
+<p>{{data.roll}}:{{data.name}}</p>
+</div>
+<a href="/App/student">GoBack</a>
+{% endblock %}

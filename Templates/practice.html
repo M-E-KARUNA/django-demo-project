@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+{% for i in fruits %}
+{% if forloop.last %}
+<h1>first</h1>
+{% else %}
+<h1>no</h1>
+{% endif %}
+{% endfor %}
+</body>
+</html>

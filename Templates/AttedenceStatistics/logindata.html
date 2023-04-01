@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<link rel="stylesheet"  type="text/css" href="{% static 'css/l.css' %}">
+<script>
+function movement(){
+at_id=document.getElementById('move');
+at_id.style.top="8%";
+at_id.style.width="50%";
+at_id.style.backgroundColor="white";
+at_id.style.border="1px";
+at_id.style.borderStyle="solid";
+at_id.style.borderColor="#985";
+at_id.style.borderRadius="2px";
+at_id.style.color="#422";
+document.getElementById("a").style.zIndex="1";
+}
+
+</script>
+</head>
+
+<body>
+<h1>ATTEDENCE STATISTICS</h1>
+<div class="m" >
+</div>
+
+<form action="detail/" method="POST" autocomplete="off" >
+{% csrf_token %} 
+<div class="out">
+<div class="login">
+<label id="move" onmouseover="movement()">Enter Your Roll No.
+</label>
+<input type='text' name='roll' id="a">
+</div>
+</div>
+<div id="rotate">
+</div>
+<input type="submit" value="Go" class="button">
+</form>
+</body>
+</html>

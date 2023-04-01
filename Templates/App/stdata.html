@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head></head>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<body>
+<h1>STUDENT MARK DETAILS</h1>
+<table>
+<tr>
+<th>NAME</th>
+<th>MARK</th>
+
+</tr>
+{% for st_data in data %}
+<tr>
+<td>{{st_data.name}}</td>
+<td>{{st_data.mark}}</td>
+</tr>
+{% endfor %}
+
+</table>
+<img src="{% static 'images/studentmarkplot.jpg' %}">
+</body>
+</html>

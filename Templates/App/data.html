@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ol{
+height:200px;
+width:400px;
+margin:0px auto;
+}
+li{
+margin:5px;
+text-align:center;
+color:#995;
+background-color:#322;
+border:1px solid #443;
+border-radius:10px;
+
+
+}
+
+</style>
+</head>
+<body>
+<h1 style="text-align:center"> DETAILS FROM DATABASE</h1>
+<ol>
+{% for data in student_data %}
+    <li>{{data.roll}}-{{data.name}}</li>
+{% endfor %}
+</ol>
+</body>
+</html>

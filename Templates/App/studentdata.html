@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>STUDENT DATA</h1>
+<table>
+<tr>
+<td>NAME</td>
+<td>ROLLNO.</td>
+</tr>
+{% for data in datas %}
+<tr>
+<td>{{data.name}}</td>
+<td>{{data.mark}}</td>
+<td><a href="/App/update_data/{{data.id}}"><button type="button">update</button></a></td>
+<td><a href="/App/delete_data/{{data.id}}"><button type="button">delete</button></a></td>
+</tr>
+{% endfor %}
+</table>
+<a href="{% url 'insertdata' %}"><button type="button">insert</button></a>
+
+</body>
+</html>

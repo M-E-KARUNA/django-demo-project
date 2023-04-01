@@ -1,0 +1,13 @@
+{% extends 'App/useparent.html' %}
+{% block title %} 
+DETAILS FROM DB
+{% endblock %} 
+  
+
+{% block content %}
+<ol>
+{% for data in datas %}
+<li><a href='infomaster/{{data.id}}'>{{data.name}}</a></li>
+{% endfor %}
+</ol>
+{% endblock %}

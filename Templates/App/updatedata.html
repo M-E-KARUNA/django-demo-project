@@ -1,0 +1,16 @@
+{% extends 'App/st.html' %}
+{% block head %}
+deletion 
+{% endblock %}
+{% block content %}
+<form action="/App/update_data/{{data.id}}" method="POST">
+{% csrf_token %}
+<div>
+name:<input type="text" name="name" value="{{data.name}}">
+</div>
+<div>
+mark:<input type="number" name='mark' value="{{data.mark}}">
+</div>
+<input type="submit" value="update">
+</form>
+{% endblock %}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html,body{
+height:100%;
+width:100%;
+}
+#main{
+height:80%;
+width:30%;
+border:1px solid black;
+margin:10% 35%;
+border-radius:20px;
+box-shadow:2px 2px 2px 4px,-1px -1px 2px 4px; 
+}
+#m1{
+height:20%;
+width:100%;
+border-bottom:1px solid navy;
+
+
+}
+*{
+box-sizing:border-box;}
+#m2{
+
+box-sizing:border-box;
+height:80%;
+display:flex;
+flex-direction:row;
+	
+}
+#m21{
+display:flex;
+flex-wrap:wrap;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+width:80%;
+}
+#m22{
+width:20%;
+height:100%;
+display:flex;
+flex-wrap:wrap;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+#res{
+box-sizing:border-box;
+height:80%;
+width:80%;
+position:relative;
+top:10%;
+left:10%; 	
+border-radius:10px;
+border-color:navy;
+text-align:right;
+font-size:50px;
+color:rgb(0,0,0,0.5);
+
+}
+#butto:focus{
+height:12%;
+width:55%;
+}
+#button:focus{
+height:8%;
+width:20%;
+
+
+}
+#button{
+height:10%;
+width:25%;
+margin-left:7%;
+border:1px solid black;
+border-radius:20px;
+
+
+}
+#butto{
+margin-top:20%;
+height:15%;
+width:60%;
+border:1px solid black;
+border-radius:20px;
+
+
+}
+</style>
+
+</head>
+<body>
+
+
+<div id="main">
+    <div id="m1">
+        <input type="text" id="res" placeholder="0">
+    </div>
+    <div id="m2">
+        <div id="m21">
+        <input type="button" id="button" value="1" onclick="document.getElementById('res').value+='1'"><input type="button" id="button" value="2" onclick="document.getElementById('res').value+='2'">
+ <input type="button" id="button" value="3" onclick="document.getElementById('res').value+='3'">
+ <input type="button" id="button" value="4" onclick="document.getElementById('res').value+='4'">
+ <input type="button" id="button" value="5" onclick="document.getElementById('res').value+='5'">
+ <input type="button" id="button" value="6" onclick="document.getElementById('res').value+='6'">
+ <input type="button" id="button" value="7" onclick="document.getElementById('res').value+='7'">
+ <input type="button" id="button" value="8" onclick="document.getElementById('res').value+='8'">
+<input type="button" id="button" value="9" onclick="document.getElementById('res').value+='9'">
+ <input type="button" id="button" value="clr" onclick="document.getElementById('res').value=''">
+<input type="button" id="button" value="0" onclick="document.getElementById('res').value+='0'">
+<input type="button" id="button" value="=" onclick="document.getElementById('res').value=eval(document.getElementById('res').value)">
+</div>
+<div id="m22">
+ <input type="button" id="butto" value="+" onclick="document.getElementById('res').value+='+'"> 
+ <input type="button" id="butto" value="-" onclick="document.getElementById('res').value+='-'">
+ <input type="button" id="butto" value="*" onclick="document.getElementById('res').value+='*'">
+ <input type="button" id="butto" value="/" onclick="document.getElementById('res').value+='/'">
+ <input type="button" id="butto" value="%" onclick="document.getElementById('res').value+='%'">
+</div>
+ 
+ 
+ 
+   </div>
+</div>
+</body>
+</html>
